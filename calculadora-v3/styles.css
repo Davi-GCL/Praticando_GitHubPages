@@ -1,0 +1,139 @@
+*{
+	font-family: Arial;
+	
+}
+
+body{
+	margin: 0px;
+	background-color:#C98826;
+}
+.main-app{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.calculator{
+	
+	max-width: 425px;
+	height: 500px;
+	padding: 1rem;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-app{
+	margin-top: 5px;
+	text-align: center;
+}
+
+.btn-togle-hist{
+	position: relative;
+    left: 98%;
+    top: -7%;
+	display: block;
+}
+
+.visor{
+	display:flex;
+	justify-content: center;
+	width:100%;
+	padding-bottom: 10px;
+	margin-bottom: 17px;
+	border-bottom: 1px solid;
+}
+
+.form-visor{
+	width: 85%;
+	height: 2.4rem;
+	font-size: 2.5rem;
+	/*font-weight: 600;*/
+	text-align:right;
+	border-radius: 8px;
+    border: 0px solid grey;
+	
+	outline: none;
+}
+
+.body-calculator{
+	
+	/*border: 1px solid grey;*/
+    border-radius: 8px;
+	height:75%;
+}
+
+#btn-soma{grid-area: soma;}
+#btn-sub{grid-area: sub;}
+#btn-mult{grid-area: mult;}
+#btn-div{grid-area: div;}
+
+#btn-igual{
+	grid-area: igual;
+	background: linear-gradient(129deg, #eba030 50%, #e39828 50%);
+	border: 0px solid;
+	border-radius: 4px;
+}
+#btn-igual:hover{
+	background: #e39828;
+}	
+
+#btn-cls{grid-area: cls;}
+#btn-virgula{grid-area: virgula;}
+#btn0{grid-area:zero;}
+
+#btn-soma, #btn-sub, #btn-mult, #btn-div ,#btn-cls{
+	background-color: #dddddd;
+} 
+
+#btn-soma:hover, #btn-sub:hover, #btn-mult:hover, #btn-div:hover, #btn-cls:hover{
+	background-color: #b8b8b8;
+} 
+
+.keyboard{
+	height:100%;
+	/*padding: 1rem;*/
+	display:grid;
+	grid-template-areas: 
+	'cls cls div mult'
+	'. . . sub'
+	'. . . soma'
+	'. . . igual'
+	'zero zero virgula igual';
+	gap: 2px;
+	
+}
+
+.keyboard input{
+	font-size: 1rem;
+    font-weight: 600;
+	background-color: #c7c7c733;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.keyboard input:hover{
+	background-color: #dddddd;
+	
+	box-sizing: border-box;
+}
+
+/*#btn-igual {
+  grid-column-start:3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+*/
+
+.historic{
+	width: 200px;
+	height: 500px;
+	margin-left: 1rem;
+	padding: 0.25rem;
+	background:#FFF;
+	border-radius: 8px;
+}
+
+.historic h4{
+	text-align: center;
+}
